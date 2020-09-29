@@ -1,0 +1,32 @@
+/************* FONTS ******************/
+	@font-face 
+	{
+	 font-family: "Spartan";
+	 src: url("./font/Spartan-VariableFont_wght.ttf") format("truetype");
+	 font-weight: 400 700;
+	}
+/**************************************/
+
+/************* GENERAL SETTING ******************/
+	.desktop_desk_background
+	{
+	 	background-color: url()
+	}
+
+	.smartphone_background
+	{
+	 	background-color: url()
+	}
+	
+	*
+	{
+		font-family: "Spartan", "Serif";
+	}
+/************************************************/
+
+.title
+{
+	color: hsl(300, 43%, 22%);
+	font-size: 3em;
+	font-weight: 700;
+}
