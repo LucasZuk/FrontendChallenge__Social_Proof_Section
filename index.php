@@ -40,14 +40,16 @@
       <div class="rating">
         <?php
           $rating_reviews = new Rating;
-          $rating_reviews-> set_rating_value('Rated 5 Stars in Reviews');
-          $rating_reviews-> set_rating_score(5);
-
-          $rating_reviews -> publish_rating();
+          $rating_reviews -> publish_rating('Rated 5 Stars in Reviews', 5);
         ?>
-        <div class="rating box"> Rated 5 Stars in Reviews </div>
-        <div class="rating box"> Rated 5 Stars in Report Guru </div>
-        <div class="rating box"> Rated 5 Stars in BestTech </div>
+        <?php
+          $rating_guru = new Rating;
+          $rating_guru -> publish_rating('Rated 5 Stars in Report Guru', 4);
+        ?>
+        <?php
+          $rating_bestTech = new Rating;
+          $rating_bestTech -> publish_rating('Rated 5 Stars in BestTech', 5);
+        ?>
       </div>
     </main>
 

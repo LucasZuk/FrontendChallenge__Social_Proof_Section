@@ -51,7 +51,6 @@
 	.top_title
 	{
 		flex-grow: 0;
-		border: solid;
 		width: 380px;
 		display: flex;
 		flex-direction: column;
@@ -65,8 +64,9 @@
 		font-weight: 700;
 		width: 374px;
 		margin: 0;
+		margin-bottom: 10px;
 
-		border:solid;
+
 
 	}
 
@@ -78,7 +78,6 @@
 		line-height: 1.5em;
 		margin: 0;
 
-		border:solid;
 	}
 	/******************************************/
 
