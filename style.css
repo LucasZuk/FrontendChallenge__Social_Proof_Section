@@ -10,23 +10,87 @@
 /************* GENERAL SETTING ******************/
 	.desktop_desk_background
 	{
-	 	background-color: url()
+	 	background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+	 	background-repeat: no-repeat, no-repeat;
+	 	background-attachment: fixed, fixed;
+	 	background-position: left top, right bottom;
 	}
 
 	.smartphone_background
 	{
-	 	background-color: url()
+	 	background-image: url()
 	}
-	
+
 	*
 	{
 		font-family: "Spartan", "Serif";
 	}
+
+	body
+	{
+		display: flex;
+		flex-direction: column;
+
+		margin-right: 166px;
+		margin-left:  160px;
+		margin-top:   115px;
+		margin-bottom: 70px;
+	}
+
+	main
+	{
+		display: flex;
+		justify-content: space-between;
+		/*word-wrap: break-word;*/
+	}
+
 /************************************************/
 
-.title
-{
-	color: hsl(300, 43%, 22%);
-	font-size: 3em;
-	font-weight: 700;
-}
+/******************* FIRST FLOOR *************************/
+	/************* TOP TITLE ******************/
+	.top_title
+	{
+		flex-grow: 0;
+		border: solid;
+		width: 380px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.title
+	{
+		color: hsl(300, 43%, 22%);
+		font-size: 2.5em;
+		font-weight: 700;
+		width: 374px;
+		margin: 0;
+
+		border:solid;
+
+	}
+
+	.punchline_text
+	{
+		font-size: 12px;
+		font-weight: 400;
+		color: hsl(303, 10%, 53%);
+		line-height: 1.5em;
+		margin: 0;
+
+		border:solid;
+	}
+	/******************************************/
+
+	/*************** RATINGS ******************/
+
+	.rating
+	{
+		flex-grow: 0;
+		border: solid;
+		width: 540px;
+
+	}
+	/******************************************/
+
+/**********************************************************/
