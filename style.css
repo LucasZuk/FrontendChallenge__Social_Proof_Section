@@ -44,6 +44,12 @@
 		/*word-wrap: break-word;*/
 	}
 
+	.attribution
+	{
+		margin-top: 60px;
+		font-size: 8px;
+		text-align: right;
+	}
 /************************************************/
 
 /******************* FIRST FLOOR *************************/
@@ -143,5 +149,83 @@
 	}
 
 	/******************************************/
+/**********************************************************/
+
+/******************* SECOND FLOOR *************************/
+	.testimony
+	{
+		display: flex;
+		justify-content: space-between;
+
+		margin-top: 50px;
+	}
+
+	/******************** TESTIMONY BOX ***********************/
+		.testimony_box
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			background-color: hsl(300, 43%, 22%);
+
+			border-radius: 5px;
+
+			width: 290px;
+			height: 190px;
+
+		}
+
+		.testimony_box:nth-of-type(2)
+		{
+			margin-top: 10px;
+		}
+
+		.testimony_box:nth-of-type(3)
+		{
+			margin-top: 20px;
+		}
+
+		.testimony_profil
+		{
+			display: flex;
+		}
+
+		.testimony_photo
+		{
+			border-radius: 50%;
+			height: 30px;
+			width: auto;
+
+			margin:30px 0 20px 20px;
+		}
+
+		.testimony_name
+		{
+			color:hsl(0, 0%, 100%);
+			font-size: 12px;
+			margin:35px 0 0 20px;
+
+		}
+
+		.testimony_approval
+		{
+			font-size: 12px;
+			color: hsl(333, 80%, 67%);
+			margin:0 0 0 20px;
+
+
+		}
+
+		.testimony_comment
+		{
+			font-size: 11px;
+			margin: 5px 20px;
+			line-height: 1.5em;
+
+			color: hsl(300, 24%, 96%);
+
+		}
+	/**********************************************************/
 
 /**********************************************************/

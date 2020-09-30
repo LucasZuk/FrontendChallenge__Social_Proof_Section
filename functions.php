@@ -53,7 +53,14 @@ class Testimony
 
 	public function set_testimony_approval ($approval)
 	{
-		$this->_testimony_approval = $approval;
+		if ($approval == true){
+			$this->_testimony_approval = "Verified buyer";
+		}
+		else
+		{
+			$this->_testimony_approval = "Unverified buyer";
+		}
+		
 	}
 
 	public function set_testimony_comment ($comment)
@@ -68,10 +75,24 @@ class Testimony
 
 	public function publish_testimony ($_testimony_name, $_testimony_approval, $_testimony_comment, $_testimony_photo)
 	{
-		$this-> set_testimony_name ($name);
+		$this-> set_testimony_name ($_testimony_name);
 		$this-> set_testimony_approval ($_testimony_approval);
 		$this-> set_testimony_comment ($_testimony_comment);
 		$this-> set_testimony_photo ($_testimony_photo);
+
+		echo 	'<div class="testimony_box">
+					<div class="testimony_profil">
+						<img 	class="testimony_photo"
+								src="./images/'. $this->_testimony_photo . '"
+								alt="Pictures profil of '.$this->_testimony_name.'"
+						>
+						<div class="testimony_identity">
+							<h3 class="testimony_name">'.$this->_testimony_name.'</h3>
+							<p class="testimony_approval">'.$this->_testimony_approval.'</p>
+						</div>
+					</div>
+					<p class="testimony_comment">'.$this->_testimony_comment.'</p>
+				</div>';
 
 	}
 }
