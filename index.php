@@ -44,7 +44,7 @@
         ?>
         <?php
           $rating_guru = new Rating;
-          $rating_guru -> publish_rating('Rated 5 Stars in Report Guru', 4);
+          $rating_guru -> publish_rating('Rated 5 Stars in Report Guru', 5);
         ?>
         <?php
           $rating_bestTech = new Rating;
