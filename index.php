@@ -15,13 +15,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1280px) and (min-width: 421px" href="./style.css"> 
+    <link rel="stylesheet" media="screen and (max-width: 420px" href="./style_mobile.css"> 
 
     <title>Frontend Mentor | Social proof section</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body class="desktop_desk_background">
+  <body class="background">
 
     <!-- FIRST FLOOR -->
     <main>
@@ -40,15 +41,15 @@
       <div class="rating">
         <?php
         	$rating_reviews = new Rating;
-           	$rating_reviews -> publish_rating('Reviews', $stars);         	
+           	$rating_reviews -> publish_rating('Reviews', 5);         	
         ?>
         <?php
           $rating_guru = new Rating;
-          $rating_guru -> publish_rating('Rated 5 Stars in Report Guru', 5);
+          $rating_guru -> publish_rating('Report Guru', 5);
         ?>
         <?php
           $rating_bestTech = new Rating;
-          $rating_bestTech -> publish_rating('Rated 5 Stars in BestTech', 5);
+          $rating_bestTech -> publish_rating('BestTech', 5);
         ?>
       </div>
     </main>

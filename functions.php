@@ -8,7 +8,13 @@ class Rating
 
 	public function publish_rating ($_rating_value, $_rating_score) 
 	{
-		$this->set_rating_value('Rated '. $_rating_score . ' stars in '. $_rating_value);
+		if ($_rating_score == 1 ){
+			$this->set_rating_value('Rated 1 star in '. $_rating_value);
+		}
+		else
+		{
+			$this->set_rating_value('Rated '. $_rating_score . ' stars in '. $_rating_value);
+		}
 		$this->set_rating_score($_rating_score);
 
 		echo '<div class="rating_box"><div class="rating_stars">';
