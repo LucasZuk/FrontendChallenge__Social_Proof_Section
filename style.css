@@ -7,225 +7,444 @@
 	}
 /**************************************/
 
-/************* GENERAL SETTING ******************/
-	.desktop_desk_background
-	{
-	 	background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
-	 	background-repeat: no-repeat, no-repeat;
-	 	background-attachment: fixed, fixed;
-	 	background-position: left top, right bottom;
-	}
+/************************************ LAPTOP *************************************/
 
-	.smartphone_background
-	{
-	 	background-image: url()
-	}
+	/************* GENERAL SETTING ******************/
+		.desktop_desk_background
+		{
+		 	background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+		 	background-repeat: no-repeat, no-repeat;
+		 	background-attachment: fixed, fixed;
+		 	background-position: left top, right bottom;
+		}
 
-	*
-	{
-		font-family: "Spartan", "Serif";
-	}
+		.smartphone_background
+		{
+		 	background-image: url()
+		}
 
-	body
-	{
-		display: flex;
-		flex-direction: column;
+		*
+		{
+			font-family: "Spartan", "Serif";
+		}
 
-		margin-right: 166px;
-		margin-left:  160px;
-		margin-top:   115px;
-		margin-bottom: 70px;
-	}
-
-	main
-	{
-		display: flex;
-		justify-content: space-between;
-		/*word-wrap: break-word;*/
-	}
-
-	.attribution
-	{
-		margin-top: 60px;
-		font-size: 8px;
-		text-align: right;
-	}
-/************************************************/
-
-/******************* FIRST FLOOR *************************/
-	/************* TOP TITLE ******************/
-	.top_title
-	{
-		flex-grow: 0;
-		width: 380px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.title
-	{
-		color: hsl(300, 43%, 22%);
-		font-size: 2.5em;
-		font-weight: 700;
-		width: 374px;
-		margin: 0;
-		margin-bottom: 10px;
-
-
-
-	}
-
-	.punchline_text
-	{
-		font-size: 12px;
-		font-weight: 400;
-		color: hsl(303, 10%, 53%);
-		line-height: 1.5em;
-		margin: 0;
-
-	}
-	/******************************************/
-
-	/*************** RATINGS ******************/
-
-	.rating
-	{
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		width: 540px;
-
-	}
-
-	.rating_box
-	{
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-
-		background-color: hsl(300, 24%, 96%);
-		border-radius: 7px;
-
-		width: 400px;
-		height: 45px;
-		margin: 5px 0;
-
-	}
-
-		.rating_box:nth-of-type(2)
-	{
-		margin-left: 50px;
-	}
-
-		.rating_box:nth-of-type(3)
-	{
-		margin-left: 100px;
-	}
-
-	.rating_stars
-	{
-
-		width: 175px;
-		display: flex;
-		justify-content: center;
-
-	}
-
-	.rating_star
-	{
-		margin:0 5px;
-	}
-
-	.rating_text
-	{
-		text-align: center;
-		font-size: 12px;
-		font-weight: 700;
-		color: hsl(300, 43%, 22%);
-
-
-
-	}
-
-	/******************************************/
-/**********************************************************/
-
-/******************* SECOND FLOOR *************************/
-	.testimony
-	{
-		display: flex;
-		justify-content: space-between;
-
-		margin-top: 50px;
-	}
-
-	/******************** TESTIMONY BOX ***********************/
-		.testimony_box
+		body
 		{
 			display: flex;
 			flex-direction: column;
-			align-items: flex-start;
 
-			background-color: hsl(300, 43%, 22%);
-
-			border-radius: 5px;
-
-			width: 290px;
-			height: 190px;
-
+			margin-right: 166px;
+			margin-left:  160px;
+			margin-top:   115px;
+			margin-bottom: 70px;
 		}
 
-		.testimony_box:nth-of-type(2)
-		{
-			margin-top: 10px;
-		}
-
-		.testimony_box:nth-of-type(3)
-		{
-			margin-top: 20px;
-		}
-
-		.testimony_profil
+		main
 		{
 			display: flex;
+			justify-content: space-between;
+			/*word-wrap: break-word;*/
 		}
 
-		.testimony_photo
+		.attribution
 		{
-			border-radius: 50%;
-			height: 30px;
-			width: auto;
+			margin-top: 60px;
+			font-size: 8px;
+			text-align: right;
+		}
+	/************************************************/
 
-			margin:30px 0 20px 20px;
+	/******************* FIRST FLOOR *************************/
+		/************* TOP TITLE ******************/
+		.top_title
+		{
+			flex-grow: 0;
+			width: 380px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 
-		.testimony_name
+		.title
 		{
-			color:hsl(0, 0%, 100%);
+			color: hsl(300, 43%, 22%);
+			font-size: 2.5em;
+			font-weight: 700;
+			width: 374px;
+			margin: 0;
+			margin-bottom: 10px;
+
+
+
+		}
+
+		.punchline_text
+		{
 			font-size: 12px;
-			margin:35px 0 0 20px;
-
-		}
-
-		.testimony_approval
-		{
-			font-size: 12px;
-			color: hsl(333, 80%, 67%);
-			margin:0 0 0 20px;
-
-
-		}
-
-		.testimony_comment
-		{
-			font-size: 11px;
-			margin: 5px 20px;
+			font-weight: 400;
+			color: hsl(303, 10%, 53%);
 			line-height: 1.5em;
-
-			color: hsl(300, 24%, 96%);
+			margin: 0;
 
 		}
+		/******************************************/
+
+		/*************** RATINGS ******************/
+
+		.rating
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 540px;
+
+		}
+
+		.rating_box
+		{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			background-color: hsl(300, 24%, 96%);
+			border-radius: 7px;
+
+			width: 400px;
+			height: 45px;
+			margin: 5px 0;
+
+		}
+
+			.rating_box:nth-of-type(2)
+		{
+			margin-left: 50px;
+		}
+
+			.rating_box:nth-of-type(3)
+		{
+			margin-left: 100px;
+		}
+
+		.rating_stars
+		{
+
+			width: 175px;
+			display: flex;
+			justify-content: center;
+
+		}
+
+		.rating_star
+		{
+			margin:0 5px;
+		}
+
+		.rating_text
+		{
+			text-align: center;
+			font-size: 12px;
+			font-weight: 700;
+			color: hsl(300, 43%, 22%);
+
+
+
+		}
+
+		/******************************************/
 	/**********************************************************/
 
-/**********************************************************/
+	/******************* SECOND FLOOR *************************/
+		.testimony
+		{
+			display: flex;
+			justify-content: space-between;
+
+			margin-top: 50px;
+		}
+
+		/******************** TESTIMONY BOX ***********************/
+			.testimony_box
+			{
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+
+				background-color: hsl(300, 43%, 22%);
+
+				border-radius: 5px;
+
+				width: 290px;
+				height: 190px;
+
+			}
+
+			.testimony_box:nth-of-type(2)
+			{
+				margin-top: 10px;
+			}
+
+			.testimony_box:nth-of-type(3)
+			{
+				margin-top: 20px;
+			}
+
+			.testimony_profil
+			{
+				display: flex;
+			}
+
+			.testimony_photo
+			{
+				border-radius: 50%;
+				height: 30px;
+				width: auto;
+
+				margin:30px 0 20px 20px;
+			}
+
+			.testimony_name
+			{
+				color:hsl(0, 0%, 100%);
+				font-size: 12px;
+				margin:35px 0 0 20px;
+
+			}
+
+			.testimony_approval
+			{
+				font-size: 12px;
+				color: hsl(333, 80%, 67%);
+				margin:0 0 0 20px;
+
+
+			}
+
+			.testimony_comment
+			{
+				font-size: 11px;
+				margin: 5px 20px;
+				line-height: 1.5em;
+
+				color: hsl(300, 24%, 96%);
+
+			}
+		/**********************************************************/
+	/**********************************************************/
+/*********************************************************************************/
+
+/************************************ SMARTPHONE *************************************/
+
+@media only screen and (max-device-width:480px) {
+
+	/************* GENERAL SETTING ******************/
+		.smartphone_background
+		{
+		 	background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+		 	background-repeat: no-repeat, no-repeat;
+		 	background-attachment: fixed, fixed;
+		 	background-position: left top, right bottom;
+		}
+
+		*
+		{
+			font-family: "Spartan", "Serif";
+		}
+
+		body
+		{
+			display: flex;
+			flex-direction: column;
+		}
+
+		main
+		{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.attribution
+		{
+			margin-top: 60px;
+			font-size: 8px;
+			text-align: center;
+		}
+	/************************************************/
+
+	/******************* FIRST FLOOR *************************/
+		/************* TOP TITLE ******************/
+		.top_title
+		{
+			flex-grow: 0;
+			width: 380px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.title
+		{
+			color: hsl(300, 43%, 22%);
+			font-size: 2.5em;
+			font-weight: 700;
+			width: 374px;
+			margin: 0;
+			margin-bottom: 10px;
+
+
+
+		}
+
+		.punchline_text
+		{
+			font-size: 12px;
+			font-weight: 400;
+			color: hsl(303, 10%, 53%);
+			line-height: 1.5em;
+			margin: 0;
+
+		}
+		/******************************************/
+
+		/*************** RATINGS ******************/
+
+		.rating
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 540px;
+
+		}
+
+		.rating_box
+		{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			background-color: hsl(300, 24%, 96%);
+			border-radius: 7px;
+
+			width: 400px;
+			height: 45px;
+			margin: 5px 0;
+
+		}
+
+			.rating_box:nth-of-type(2)
+		{
+			margin-left: 50px;
+		}
+
+			.rating_box:nth-of-type(3)
+		{
+			margin-left: 100px;
+		}
+
+		.rating_stars
+		{
+
+			width: 175px;
+			display: flex;
+			justify-content: center;
+
+		}
+
+		.rating_star
+		{
+			margin:0 5px;
+		}
+
+		.rating_text
+		{
+			text-align: center;
+			font-size: 12px;
+			font-weight: 700;
+			color: hsl(300, 43%, 22%);
+
+
+
+		}
+
+		/******************************************/
+	/**********************************************************/
+
+	/******************* SECOND FLOOR *************************/
+		.testimony
+		{
+			display: flex;
+			justify-content: space-between;
+
+			margin-top: 50px;
+		}
+
+		/******************** TESTIMONY BOX ***********************/
+			.testimony_box
+			{
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+
+				background-color: hsl(300, 43%, 22%);
+
+				border-radius: 5px;
+
+				width: 290px;
+				height: 190px;
+
+			}
+
+			.testimony_box:nth-of-type(2)
+			{
+				margin-top: 10px;
+			}
+
+			.testimony_box:nth-of-type(3)
+			{
+				margin-top: 20px;
+			}
+
+			.testimony_profil
+			{
+				display: flex;
+			}
+
+			.testimony_photo
+			{
+				border-radius: 50%;
+				height: 30px;
+				width: auto;
+
+				margin:30px 0 20px 20px;
+			}
+
+			.testimony_name
+			{
+				color:hsl(0, 0%, 100%);
+				font-size: 12px;
+				margin:35px 0 0 20px;
+
+			}
+
+			.testimony_approval
+			{
+				font-size: 12px;
+				color: hsl(333, 80%, 67%);
+				margin:0 0 0 20px;
+
+
+			}
+
+			.testimony_comment
+			{
+				font-size: 11px;
+				margin: 5px 20px;
+				line-height: 1.5em;
+
+				color: hsl(300, 24%, 96%);
+
+			}
+		/**********************************************************/
+	/**********************************************************/
+}
+/*************************************************************************************/

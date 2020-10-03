@@ -39,8 +39,8 @@
     <!-- RATING PART -->
       <div class="rating">
         <?php
-          $rating_reviews = new Rating;
-          $rating_reviews -> publish_rating('Rated 5 Stars in Reviews', 5);
+        	$rating_reviews = new Rating;
+           	$rating_reviews -> publish_rating('Reviews', $stars);         	
         ?>
         <?php
           $rating_guru = new Rating;
