@@ -6,6 +6,7 @@ class Rating
 	private $_rating_value ="";
 	private $_rating_score="0";
 
+	// Publish the rating box 
 	public function publish_rating ($_rating_value, $_rating_score) 
 	{
 		if ($_rating_score == 1 ){
@@ -79,7 +80,8 @@ class Testimony
 		$this->_testimony_photo = $photo;
 	}
 
-	public function publish_testimony ($_testimony_name, $_testimony_approval, $_testimony_comment, $_testimony_photo)
+	// Publish the testimony box 
+	public function publish_testimony ($_testimony_name, $_testimony_approval /* boolean */, $_testimony_comment, $_testimony_photo)
 	{
 		$this-> set_testimony_name ($_testimony_name);
 		$this-> set_testimony_approval ($_testimony_approval);

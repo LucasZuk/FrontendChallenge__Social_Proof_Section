@@ -33,8 +33,10 @@
 			display: flex;
 			flex-direction: column;
 
-			margin-right: 166px;
-			margin-left:  160px;
+
+			width: 80%;
+			margin-right: 10%;
+			margin-left:  10%;
 			margin-top:   115px;
 			margin-bottom: 70px;
 		}
@@ -43,7 +45,12 @@
 		{
 			display: flex;
 			justify-content: space-between;
-			/*word-wrap: break-word;*/
+			width: 100%;
+			height: 29%;
+		}
+
+		h3,p {
+			margin:0;
 		}
 
 		.attribution
@@ -58,8 +65,7 @@
 		/************* TOP TITLE ******************/
 		.top_title
 		{
-			flex-grow: 0;
-			width: 380px;
+			width: 38%;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -70,7 +76,7 @@
 			color: hsl(300, 43%, 22%);
 			font-size: 2.5em;
 			font-weight: 700;
-			width: 374px;
+			width: 100%;
 			margin: 0;
 			margin-bottom: 10px;
 
@@ -96,7 +102,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
-			width: 540px;
+			width: 50%;
 
 		}
 
@@ -109,20 +115,20 @@
 			background-color: hsl(300, 24%, 96%);
 			border-radius: 7px;
 
-			width: 400px;
-			height: 45px;
-			margin: 5px 0;
+			width: 80%;
+			height: 25%;
+			margin-top: 3%;
 
 		}
 
 			.rating_box:nth-of-type(2)
 		{
-			margin-left: 50px;
+			margin-left: 8.2%;
 		}
 
 			.rating_box:nth-of-type(3)
 		{
-			margin-left: 100px;
+			margin-left: 16.4%;
 		}
 
 		.rating_stars
@@ -159,7 +165,8 @@
 			display: flex;
 			justify-content: space-between;
 
-			width: 10px;
+			width: 100%;
+			height: 29%;
 
 			margin-top: 60px;
 		}
@@ -175,40 +182,53 @@
 
 				border-radius: 5px;
 
-				width: 290px;
-				height: 190px;
+				width: 28%;
+				max-width: 350px;
+				height: 88%;
+
+				padding: 30px 20px;
 
 			}
 
 			.testimony_box:nth-of-type(2)
 			{
-				margin-top: 10px;
+				margin-top: 1.5%;
 			}
 
 			.testimony_box:nth-of-type(3)
 			{
-				margin-top: 20px;
+				margin-top: 3%;
 			}
 
 			.testimony_profil
 			{
 				display: flex;
+				height: 100%;
+				margin-bottom: 10%;
 			}
+
+			.testimony_identity
+			{
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+			}
+
 
 			.testimony_photo
 			{
 				border-radius: 50%;
 				height: 30px;
 				width: auto;
-
-				margin:30px 0 20px 20px;
 			}
 
 			.testimony_name
 			{
 				color:hsl(0, 0%, 100%);
 				font-size: 12px;
-				margin:35px 0 0 20px;
+				margin-left: 15%;
+				margin-bottom: 5%;
+				width: 100%;
 
 			}
 
@@ -216,15 +236,14 @@
 			{
 				font-size: 12px;
 				color: hsl(333, 80%, 67%);
-				margin:0 0 0 20px;
-
+				margin-left: 15%;
+				width: 100%;
 
 			}
 
 			.testimony_comment
 			{
 				font-size: 11px;
-				margin: 5px 20px;
 				line-height: 1.5em;
 
 				color: hsl(300, 24%, 96%);

@@ -15,7 +15,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" media="screen and (max-width: 1280px) and (min-width: 421px" href="./style.css"> 
+    <link rel="stylesheet" media="screen and (max-width: 1900px) and (min-width: 421px" href="./style.css"> 
     <link rel="stylesheet" media="screen and (max-width: 420px" href="./style_mobile.css"> 
 
     <title>Frontend Mentor | Social proof section</title>
@@ -40,6 +40,7 @@
     <!-- RATING PART -->
       <div class="rating">
         <?php
+          // Function in order to create a rating box with variant star and names
         	$rating_reviews = new Rating;
            	$rating_reviews -> publish_rating('Reviews', 5);         	
         ?>
@@ -57,6 +58,7 @@
     <!-- LAST FLOOR -->
     <aside class="testimony">
       <?php
+          // Function in order to create a testimony box with the name, if he/she's a verified buyer, the testimony and the profil picture
           $testimony_ColtonSmith = new Testimony;
           $testimony_ColtonSmith  -> publish_testimony('Colton Smith', true ,'"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"', "image-colton.jpg" );
       ?>
