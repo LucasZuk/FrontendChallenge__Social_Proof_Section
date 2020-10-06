@@ -83,7 +83,7 @@
 
 		/*************** RATINGS ******************/
 
-		.rating
+		#rating
 		{
 			display: flex;
 			flex-direction: column;
@@ -132,7 +132,7 @@
 	/**********************************************************/
 
 	/******************* SECOND FLOOR *************************/
-		.testimony
+		#testimony
 		{
 			display: flex;
 			flex-direction: column;
